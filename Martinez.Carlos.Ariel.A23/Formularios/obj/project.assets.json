@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0-windows7.0": {
+      "Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entidades.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Entidades/Entidades.csproj",
+      "msbuildProject": "../Entidades/Entidades.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0-windows7.0": [
+      "Entidades >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\marti\\.nuget\\packages\\": {},
@@ -14,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marti\\OneDrive\\Escritorio\\Martinez.Carlos.Ariel.A23\\laboratorio_2_Parcial\\Martinez.Carlos.Ariel.A23\\Entidades\\Entidades.csproj",
-      "projectName": "Entidades",
-      "projectPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Martinez.Carlos.Ariel.A23\\laboratorio_2_Parcial\\Martinez.Carlos.Ariel.A23\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\marti\\OneDrive\\Escritorio\\Martinez.Carlos.Ariel.A23\\laboratorio_2_Parcial\\Martinez.Carlos.Ariel.A23\\Formularios\\Formularios.csproj",
+      "projectName": "Formularios",
+      "projectPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Martinez.Carlos.Ariel.A23\\laboratorio_2_Parcial\\Martinez.Carlos.Ariel.A23\\Formularios\\Formularios.csproj",
       "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Martinez.Carlos.Ariel.A23\\laboratorio_2_Parcial\\Martinez.Carlos.Ariel.A23\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Martinez.Carlos.Ariel.A23\\laboratorio_2_Parcial\\Martinez.Carlos.Ariel.A23\\Formularios\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -29,7 +48,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -37,9 +56,13 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "projectReferences": {}
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "C:\\Users\\marti\\OneDrive\\Escritorio\\Martinez.Carlos.Ariel.A23\\laboratorio_2_Parcial\\Martinez.Carlos.Ariel.A23\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Martinez.Carlos.Ariel.A23\\laboratorio_2_Parcial\\Martinez.Carlos.Ariel.A23\\Entidades\\Entidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -54,8 +77,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
         "imports": [
           "net461",
           "net462",
@@ -70,6 +93,9 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
